@@ -1,0 +1,17 @@
+.footer {
+    height: 100px;
+    background-color: rgb(0, 7, 43);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    color: #fffb00 !important;
+    font-weight: 600;
+}
