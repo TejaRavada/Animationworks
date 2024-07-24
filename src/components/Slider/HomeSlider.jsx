@@ -40,7 +40,7 @@ const HomeSlider = () => {
                             method="POST"
                             className="submit-banner-btn"
                         >
-                            <h2 className='banner-heading'>My photoshop works - <br /> Drawing</h2>
+                            <h2 className='banner-heading'>My Animation works - <br /> Animation</h2>
                             <p>"My Creative works"</p>
                             <div className="btn-banner">
                             </div>

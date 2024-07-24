@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './styles.css';
 
-const ImageSlider = ({ images, initialSlide  }) => {
+const ImageSlider = ({ images }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -13,14 +13,13 @@ const ImageSlider = ({ images, initialSlide  }) => {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    initialSlide: initialSlide,
   };
 
   return (
     <Slider {...settings} style={{ height: '100%' }}>
       {images.map((image, index) => (
         <div key={index} style={{ height: '100%' }}>
-          <img src={image} alt={`Slider ${index + 1}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          <img src={image} alt={`image-${index}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
         </div>
       ))}
     </Slider>

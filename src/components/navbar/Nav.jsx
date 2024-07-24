@@ -24,26 +24,28 @@ const Nav = () => {
     }, [handleClickOutside]);
 
     return (
-        <div className="navfixed">
-            <div className="nav-full">
-                <div className="container">
-                    <div className="nav">
-                        <div className="logo">
-                            <Link to="/">Teja Ravada</Link>
-                        </div>
-                        <div className="nav-mob" onClick={handleToggleMenu}>
-                            <IoMdMenu />
-                        </div>
-                        <div className={`nav-items ${showNavItems ? 'show' : ''}`}>
-                            <Link to="/drawing" onClick={handleToggleMenu}>Drawing</Link>
-                            <Link to="/digital-painting" onClick={handleToggleMenu}>Digital Painting</Link>
-                            <Link to="/background-design" onClick={handleToggleMenu}>Background Design</Link>
+        <>
+            <div className="navfixed">
+                <div className="nav-full">
+                    <div className="container">
+                        <div className="nav">
+                            <div className="logo">
+                                <Link to="/">Teja Ravada</Link>
+                            </div>
+                            <div className="nav-mob " onClick={handleToggleMenu}>
+                                <IoMdMenu />
+                            </div>
+                            <div className={`nav-items ${showNavItems ? 'show' : ''}`}>
+                                <Link to="/CharaterAnimation" onClick={handleToggleMenu}>CharaterAnimation</Link>
+                                <Link to="/Elearning" onClick={handleToggleMenu}>Elearning</Link>
+                                <Link to="/Animation" onClick={handleToggleMenu}>Animation</Link>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    );
-};
+        </>
+    )
+}
 
-export default Nav;
+export default Nav
